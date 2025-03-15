@@ -10,3 +10,6 @@ terraform {
 provider "aws" {
   # Configuration options
 }
+
+
+This is the provider file Before doing any practical create this file
