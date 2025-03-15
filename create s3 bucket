@@ -1,0 +1,8 @@
+resource "aws_s3_bucket" "myexample" {
+  bucket = "sk1402ethansnew"
+
+  tags = {
+    Name        = "My bucket"
+    Environment = "Dev"
+  }
+}
