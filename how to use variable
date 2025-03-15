@@ -1,0 +1,18 @@
+main.tf
+
+resource "aws_s3_bucket" "s3name" {
+  bucket = var.s3_bucket
+
+  tags = {
+    Name        = "devops-pune-kumar"
+    Environment = "Dev"
+  }
+}
+
+
+variable.tf
+
+variable "s3_bucket" {
+	description = "value for the bucket"
+	default 	= "sk402pune"
+}
